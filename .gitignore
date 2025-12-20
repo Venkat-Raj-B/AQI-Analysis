@@ -1,0 +1,14 @@
+# Excel temporary files
+~$*.xlsx
+
+# Python (future-proofing)
+__pycache__/
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
