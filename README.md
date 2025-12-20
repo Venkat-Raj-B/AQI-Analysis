@@ -26,6 +26,7 @@ AQI-Analysis/
 │   └── methodology.md
 ├── README.md
 └── .gitignore
+```
 
 ## Excel Sheets
 
@@ -52,4 +53,11 @@ AQI-Analysis/
 - Python (pandas) implementation
 - SQL-based AQI analysis
 - Interactive dashboard
+
+```
+
+```
+
+```
+
 ```
