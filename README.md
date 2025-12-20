@@ -15,16 +15,17 @@ values using Microsoft Excel.
 
 ## Project Structure
 
-````AQI-Analysis/
+```text
+AQI-Analysis/
 ├── data/
-│ ├── raw/
-│ ├── processed/
-│ └── external/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
 ├── dashboard/
 ├── docs/
-│ └── methodology.md
+│   └── methodology.md
 ├── README.md
-└── .gitignore```
+└── .gitignore
 
 ## Excel Sheets
 
@@ -51,4 +52,4 @@ values using Microsoft Excel.
 - Python (pandas) implementation
 - SQL-based AQI analysis
 - Interactive dashboard
-````
+```
