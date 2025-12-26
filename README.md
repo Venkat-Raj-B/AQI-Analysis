@@ -79,6 +79,16 @@ AQI-Analysis/
 - Automated data ingestion and **ETL pipeline**
 - Integration with **real-time air quality APIs**
 
+## 📊 Visualizations
+
+<p align="center">
+  <img src="output/charts/daily_aqi_trend.png" width="700">
+</p>
+
+<p align="center">
+  <img src="output/charts/monthly_aqi_trend.png" width="700">
+</p>
+
 ```
 
 ```
