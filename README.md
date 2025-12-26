@@ -2,25 +2,30 @@
 
 ## Overview
 
-This project performs an end-to-end Air Quality Index (AQI) analysis using
-CPCB standards. Hourly air quality data is processed into daily and monthly AQI
-values using Microsoft Excel.
+This project presents an **end-to-end Air Quality Index (AQI) analysis** based on **CPCB standards**, implemented using **Excel, Python, and SQL**.  
+Hourly air quality data is processed into **daily and monthly AQI**, dominant pollutants are identified, and air quality trends are analyzed using analytical queries and visualizations.
 
 ## Objectives
 
-- Calculate pollutant-wise AQI using CPCB breakpoints
-- Identify overall AQI and dominant pollutants
-- Analyze daily and monthly AQI trends
-- Present insights using structured Excel analysis
+- Calculate **pollutant-wise AQI** using CPCB breakpoints
+- Derive **daily and monthly AQI**
+- Identify **overall AQI category** and **dominant pollutant**
+- Analyze **seasonal and monthly AQI trends**
+- Answer **analytical questions using SQL**
 
 ## Project Structure
 
 ```text
 AQI-Analysis/
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
+│   ├── raw/              # Original air quality data
+│   ├── processed/        # Cleaned daily & monthly AQI datasets
+│   └── external/         # CPCB reference tables
+├── notebooks/
+│   └── aqi_analysis.ipynb
+├── sql/
+│   ├── daily_queries.sql
+│   └── monthly_queries.sql
 ├── dashboard/
 ├── docs/
 │   └── methodology.md
@@ -28,31 +33,51 @@ AQI-Analysis/
 └── .gitignore
 ```
 
-## Excel Sheets
+## 📊 Data Processing & Analysis
 
-- RAW_DATA – Hourly air quality data
-- DAILY_DATA – Daily aggregation and AQI calculation
-- MONTHLY_DATA – Monthly AQI trends
-- AQI_BREAKPOINTS – CPCB reference tables
-- AQI_CATEGORY – AQI category mapping
-- DASHBOARD – AQI visualizations
+### 🔹 Excel
 
-## Key Insights
+- Cleaned raw hourly air quality data
+- Implemented **CPCB AQI calculation formula**
+- Created **daily and monthly AQI tables**
+- Designed initial AQI visualizations
 
-- PM2.5 and PM10 are the dominant pollutants on most days
-- AQI levels show seasonal variation across months
-- Monthly AQI trends provide a clear view of long-term air quality patterns
+### 🔹 Python
 
-## Tools & Technologies
+- Replicated Excel AQI logic using **pandas**
+- Performed **daily and monthly aggregation**
+- Calculated pollutant-wise AQI, final AQI, and categories
+- Visualized AQI trends with **CPCB color bands**
 
-- Microsoft Excel
-- CPCB AQI methodology
+### 🔹 SQL
 
-## Future Enhancements
+- Queried cleaned **daily and monthly AQI tables**
+- Analyzed:
+  - Worst AQI days and months
+  - AQI category distribution
+  - Dominant pollutant frequency
+  - Seasonal AQI trends
+- Used **GROUP BY, CASE, and window functions**
 
-- Python (pandas) implementation
-- SQL-based AQI analysis
-- Interactive dashboard
+## 📈 Key Insights
+
+- **PM2.5** is the dominant pollutant on most high-AQI days
+- **Winter months** exhibit higher AQI levels
+- **Monsoon months** show improved air quality
+- Monthly AQI trends highlight long-term air quality patterns
+
+## 🛠️ Tools & Technologies
+
+- **Microsoft Excel**
+- **Python** (pandas, matplotlib)
+- **SQL** (analytical queries & window functions)
+- **Git & GitHub**
+
+## 🚀 Future Enhancements
+
+- Interactive dashboard using **Power BI / Tableau**
+- Automated data ingestion and **ETL pipeline**
+- Integration with **real-time air quality APIs**
 
 ```
 
